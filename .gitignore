@@ -1,0 +1,8 @@
+server/.vs/*
+server/DTAR*
+server/obj
+server/packages
+server/Chinook/bin
+server/Chinook/obj
+*.suo
+*.dll
