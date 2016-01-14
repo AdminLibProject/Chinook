@@ -8,7 +8,7 @@ using AdminLib.Model;
 namespace Chinook.controllers.app {
 
     [RoutePrefix("api")]
-    public class ApplicationController : BaseController {
+    internal class ApplicationController : BaseController {
 
         /******************** Structures ********************/
         public class SessionInformations : IAdminQueryResult  {
