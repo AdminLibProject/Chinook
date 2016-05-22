@@ -1,8 +1,7 @@
 ﻿using AdminLib;
 using AdminLib.Model;
 
-namespace Chinook.models.library
-{
+namespace Chinook.models.library {
 
     [Meta ( table   : "Album"
           , apiName : "album" )]

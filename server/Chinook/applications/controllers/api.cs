@@ -2,16 +2,16 @@
 using System.Web.Http;
 using AdminLib.Http;
 using AdminLib.Debug;
-using Auth=AdminLib.Auth;
-using AdminLib.Model;
+using Auth=AdminLib.App.Auth;
+using AdminLib.Model.Interface;
 
-namespace Chinook.controllers.app {
+namespace Chinook.app.chinehook.controller {
 
     [RoutePrefix("api")]
     internal class ApplicationController : BaseController {
 
         /******************** Structures ********************/
-        public class SessionInformations : IAdminQueryResult  {
+        public class SessionInformations : IQueryResult  {
 
             public string           id      { get; set; }
             public UserInformations user    { get; set; }
@@ -31,7 +31,7 @@ namespace Chinook.controllers.app {
             }
         }
 
-        public class UserInformations : IAdminQueryResult {
+        public class UserInformations : IQueryResult {
             public int?   id       { get; set; }
             public string username { get; set; }
             public string email    { get; set; }

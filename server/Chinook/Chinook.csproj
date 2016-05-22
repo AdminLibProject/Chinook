@@ -56,7 +56,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="controllers\api.cs" />
+    <Compile Include="applications\controllers\api.cs" />
+    <Compile Include="models\Adapter.cs" />
     <Compile Include="models\library\Album.cs" />
     <Compile Include="models\library\Artist.cs" />
     <Compile Include="models\library\Genre.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="models\store\Invoice.cs" />
     <Compile Include="models\store\InvoiceLine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="AdminLib">
