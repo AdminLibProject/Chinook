@@ -2,7 +2,8 @@ server/.vs/*
 server/DTAR*
 server/obj
 server/packages
-server/Chinook/bin
-server/Chinook/obj
+server/bin
+server/obj
 *.suo
 *.dll
+*.csproj.user
