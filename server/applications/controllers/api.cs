@@ -4,6 +4,7 @@ using AdminLib.Http;
 using AdminLib.Debug;
 using Auth=AdminLib.App.Auth;
 using AdminLib.Model.Interface;
+using System.Web.Http.Routing;
 
 namespace Chinook.app.chinehook.controller {
 

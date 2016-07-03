@@ -14,14 +14,8 @@ namespace Chinook {
             // Itinéraires de l'API Web
             config.MapHttpAttributeRoutes();
 
-            config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-            );
-
             // Data Store Adapters
-            AdminLib.Data.Adapter.Oracle.Adapter.Declare();
+            Adapter.Declare();
 
             // Forcing JSON output
             var appXmlType = config.Formatters.XmlFormatter.SupportedMediaTypes.FirstOrDefault(t => t.MediaType == "application/xml");
