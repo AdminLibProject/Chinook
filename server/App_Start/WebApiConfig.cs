@@ -11,7 +11,14 @@ namespace Chinook {
             // Web API configuration and services
 
             // Web API routes
+            // Itinéraires de l'API Web
             config.MapHttpAttributeRoutes();
+
+            config.Routes.MapHttpRoute(
+                name: "DefaultApi",
+                routeTemplate: "api/{controller}/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );
 
             // Data Store Adapters
             AdminLib.Data.Adapter.Oracle.Adapter.Declare();
